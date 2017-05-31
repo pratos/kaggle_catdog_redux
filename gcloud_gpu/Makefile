@@ -32,9 +32,10 @@ cudnn_install: set_env_variables
 	curl -O https://storage.googleapis.com/cudnn51/cudnn-8.0-linux-x64-v5.1
 	echo "===================  Download done ======================"
 	7za x cudnn-8.0-linux-x64-v5.1
-	cd cuda
-	sudo cp include/cudnn.h /usr/local/cuda/include/
-	sudo cp lib64/* /usr/local/cuda/lib64/
+	sudo cp cuda/lib64/* /usr/local/cuda/lib64/
+	sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
+	rm -rf ~/cuda
+	rm cudnn-8.0-linux-x64-v5.1
 	
 miniconda_install: cudnn_install
 	echo "============ Installing Python =================="
