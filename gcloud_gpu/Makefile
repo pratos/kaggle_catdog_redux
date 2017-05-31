@@ -45,12 +45,12 @@ miniconda_install: cudnn_install
 	bash Miniconda3-latest-Linux-x86_64.sh
 	echo " ============ Installation done! ================"
 	source ~/.bashrc
-	conda create --name dlgpu python=3.5
-	source activate dlgpu
 
 SHELL := /bin/bash
 
-dl_lib_install: miniconda_install
+dl_lib_install: 
+	conda create --name dlgpu python=3.5
+	source activate dlgpu
 	echo " ========= Installing TensorFlow ================"
 	export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl
 	conda install setuptools
