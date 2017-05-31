@@ -27,10 +27,11 @@ set_env_variables: install.sh
 	source ~/.bashrc
 
 cudnn_install: set_env_variables
+	sudo apt-get install p7zip-full
 	echo "=============  Downloading cuDNN for CUDA8.0 ============"
-	curl -O http://developer2.download.nvidia.com/compute/machine-learning/cudnn/secure/v5.1/prod_20161129/8.0/cudnn-8.0-linux-x64-v5.1.tgz?k0Pg9UsN9Iso5ectQ9W42ZM84YmCayfN4c7TVa-mUPs_OXFmV0vs7Fx2o1DDxSE6IkxVpviTZy1RusiIYkqtX3APb1X5SHBnZPiiUf3W3TGK1zPcwy2uaISNcioJsqKsbdg7b8esqp8ZxxJP1u-1D9kLLzVgQbWQoKELRkzoaDU6fP5jXzEbDX-9OUWNdgwxjGwd7rM4AOQ > cudnn-8.0-linux-x64-v5.1.tgz
+	curl -O https://storage.googleapis.com/cudnn51/cudnn-8.0-linux-x64-v5.1
 	echo "===================  Download done ======================"
-	tar xvzf ./cudnn-8.0-linux-x64-v5.1.tgz
+	7za x cudnn-8.0-linux-x64-v5.1
 	cd cuda
 	sudo cp ./include/cudnn.h /usr/local/cuda/include/
 	sudo cp ./lib64/* /usr/local/cuda/lib64/
