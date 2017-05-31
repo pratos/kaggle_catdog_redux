@@ -23,14 +23,14 @@ set_env_variables: install.sh
 	echo "================================================="
 	echo "======= Setting up environment variables ========"
 	echo "================================================="
-	source env.sh
+	source ./env.sh
 	source ~/.bashrc
 
 cudnn_install: set_env_variables
 	echo "=============  Downloading cuDNN for CUDA8.0 ============"
 	curl -O https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v5.1/prod_20161129/8.0/cudnn-8.0-linux-x64-v5.1-tgz
 	echo "===================  Download done ======================"
-	tar xvzf ~/Downloads/cudnn-8.0-linux-x64-v5.1.tgz
+	tar xvzf ./cudnn-8.0-linux-x64-v5.1.tgz
 	cd cuda
 	sudo cp include/cudnn.h /usr/local/cuda/include/
 	sudo cp lib64/* /usr/local/cuda/lib64/
@@ -49,7 +49,7 @@ dl_lib_install: miniconda_install
 	echo " ========= Installing TensorFlow ================"
 	export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl
 	conda install setuptools
-	source pip.sh
+	source ./pip.sh
 	sudo ldconfig /usr/local/cuda/lib64
 
 jupyter.sh:
