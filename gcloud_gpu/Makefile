@@ -33,8 +33,8 @@ cudnn_install: set_env_variables
 	echo "===================  Download done ======================"
 	7za x cudnn-8.0-linux-x64-v5.1
 	cd cuda
-	sudo cp ./include/cudnn.h /usr/local/cuda/include/
-	sudo cp ./lib64/* /usr/local/cuda/lib64/
+	sudo cp include/cudnn.h /usr/local/cuda/include/
+	sudo cp lib64/* /usr/local/cuda/lib64/
 	
 miniconda_install: cudnn_install
 	echo "============ Installing Python =================="
