@@ -36,7 +36,9 @@ cudnn_install: set_env_variables
 	sudo cp cuda/include/cudnn.h /usr/local/cuda/include/
 	rm -rf ~/cuda
 	rm cudnn-8.0-linux-x64-v5.1
-	
+
+SHELL := /bin/bash
+
 miniconda_install: cudnn_install
 	echo "============ Installing Python =================="
 	curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -46,6 +48,7 @@ miniconda_install: cudnn_install
 	conda create --name dlgpu python=3.5
 	source activate dlgpu
 
+SHELL := /bin/bash
 
 dl_lib_install: miniconda_install
 	echo " ========= Installing TensorFlow ================"
@@ -53,6 +56,8 @@ dl_lib_install: miniconda_install
 	conda install setuptools
 	source ./pip.sh
 	sudo ldconfig /usr/local/cuda/lib64
+
+SHELL := /bin/bash
 
 jupyter.sh:
 	cd
