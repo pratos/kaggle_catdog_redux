@@ -28,7 +28,7 @@ set_env_variables: install.sh
 
 cudnn_install: set_env_variables
 	echo "=============  Downloading cuDNN for CUDA8.0 ============"
-	curl -O https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v5.1/prod_20161129/8.0/cudnn-8.0-linux-x64-v5.1-tgz
+	curl -O https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v5.1/prod_20161129/8.0/cudnn-8.0-linux-x64-v5.1-tgz > cudnn-8.0-linux-x64-v5.1.tgz
 	echo "===================  Download done ======================"
 	tar xvzf ./cudnn-8.0-linux-x64-v5.1.tgz
 	cd cuda
