@@ -49,13 +49,7 @@ miniconda_install: cudnn_install
 SHELL := /bin/bash
 
 dl_lib_install: 
-	conda create --name dlgpu python=3.5
-	source activate dlgpu
-	echo " ========= Installing TensorFlow ================"
-	export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp35-cp35m-linux_x86_64.whl
-	conda install setuptools
-	source ./pip.sh
-	sudo ldconfig /usr/local/cuda/lib64
+	conda env create -f environment.yml
 
 SHELL := /bin/bash
 
