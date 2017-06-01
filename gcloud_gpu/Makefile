@@ -49,7 +49,7 @@ miniconda_install: cudnn_install
 SHELL := /bin/bash
 
 dl_lib_install: 
-	conda env create -f environment.yml
+	conda env create -f dlgpu.yml
 
 SHELL := /bin/bash
 
