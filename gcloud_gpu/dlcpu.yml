@@ -1,0 +1,181 @@
+name: py35
+channels:
+- menpo
+- conda-forge
+- defaults
+dependencies:
+- blas=1.1=openblas
+- bleach=1.5.0=py35_0
+- ca-certificates=2017.4.17=0
+- certifi=2017.4.17=py35_0
+- cycler=0.10.0=py35_0
+- dbus=1.10.10=3
+- decorator=4.0.11=py35_0
+- entrypoints=0.2.2=py35_1
+- expat=2.1.0=2
+- gettext=0.19.7=1
+- glib=2.51.4=0
+- gmp=6.1.2=0
+- gst-plugins-base=1.8.0=0
+- gstreamer=1.8.0=2
+- html5lib=0.999=py35_0
+- ipykernel=4.6.1=py35_0
+- ipython=6.1.0=py35_0
+- ipython_genutils=0.2.0=py35_0
+- jedi=0.10.0=py35_0
+- jinja2=2.9.5=py35_0
+- jpeg=9b=0
+- jsonschema=2.5.1=py35_0
+- jupyter=1.0.0=py35_0
+- jupyter_client=5.0.1=py35_0
+- jupyter_console=5.1.0=py35_0
+- jupyter_core=4.3.0=py35_0
+- libffi=3.2.1=3
+- libiconv=1.14=4
+- libpng=1.6.28=0
+- libsodium=1.0.10=0
+- libxcb=1.12=1
+- markupsafe=1.0=py35_0
+- mistune=0.7.4=py35_0
+- nbconvert=5.2.1=py35_1
+- nbformat=4.3.0=py35_0
+- ncurses=5.9=10
+- notebook=5.0.0=py35_0
+- openblas=0.2.19=2
+- openssl=1.0.2k=0
+- pandoc=1.19.2=0
+- pandocfilters=1.4.1=py35_0
+- patsy=0.4.1=py35_0
+- pcre=8.39=0
+- pexpect=4.2.1=py35_0
+- pickleshare=0.7.3=py35_0
+- pip=9.0.1=py35_0
+- prompt_toolkit=1.0.14=py35_0
+- ptyprocess=0.5.1=py35_0
+- pygments=2.2.0=py35_0
+- pyparsing=2.2.0=py35_0
+- pyqt=5.6.0=py35_3
+- python-dateutil=2.6.0=py35_0
+- pytz=2017.2=py35_0
+- pyzmq=16.0.2=py35_2
+- qtconsole=4.3.0=py35_0
+- readline=6.2=0
+- seaborn=0.7.1=py35_0
+- setuptools=33.1.1=py35_0
+- simplegeneric=0.8.1=py35_0
+- sip=4.18=py35_1
+- six=1.10.0=py35_1
+- terminado=0.6=py35_0
+- testpath=0.3=py35_0
+- tornado=4.5.1=py35_0
+- traitlets=4.3.2=py35_0
+- wcwidth=0.1.7=py35_0
+- webencodings=0.5=py35_0
+- wheel=0.29.0=py35_0
+- xorg-libxau=1.0.8=3
+- xorg-libxdmcp=1.1.2=3
+- zeromq=4.2.1=1
+- zlib=1.2.11=0
+- cairo=1.14.8=0
+- fontconfig=2.12.1=3
+- freetype=2.5.5=2
+- harfbuzz=0.9.39=2
+- hdf5=1.8.17=1
+- icu=54.1=0
+- jbig=2.1=0
+- libgcc=5.2.0=0
+- libgfortran=3.0.0=1
+- libtiff=4.0.6=3
+- libxml2=2.9.4=0
+- matplotlib=2.0.2=np111py35_0
+- mkl=2017.0.1=0
+- numpy=1.11.3=py35_0
+- pandas=0.20.1=np111py35_0
+- pixman=0.34.0=0
+- python=3.5.3=1
+- qt=5.6.2=4
+- scikit-learn=0.18.1=np111py35_1
+- scipy=0.19.0=np111py35_0
+- sqlite=3.13.0=0
+- statsmodels=0.8.0=np111py35_0
+- tk=8.5.18=0
+- xz=5.2.2=1
+- ipywidgets=5.1.5=py35_0
+- opencv3=3.2.0=np111py35_0
+- widgetsnbextension=1.2.3=py35_1
+- pip:
+  - cachetools==2.0.0
+  - chardet==3.0.3
+  - dill==0.2.6
+  - enum34==1.1.6
+  - future==0.16.0
+  - gapic-google-cloud-datastore-v1==0.15.3
+  - gapic-google-cloud-error-reporting-v1beta1==0.15.3
+  - gapic-google-cloud-logging-v2==0.91.3
+  - gapic-google-cloud-pubsub-v1==0.15.4
+  - gapic-google-cloud-spanner-admin-database-v1==0.15.3
+  - gapic-google-cloud-spanner-admin-instance-v1==0.15.3
+  - gapic-google-cloud-spanner-v1==0.15.3
+  - gapic-google-cloud-speech-v1beta1==0.15.3
+  - gapic-google-cloud-vision-v1==0.90.3
+  - google-auth==1.0.1
+  - google-auth-httplib2==0.0.2
+  - google-cloud==0.25.0
+  - google-cloud-bigquery==0.24.0
+  - google-cloud-bigtable==0.24.0
+  - google-cloud-core==0.24.1
+  - google-cloud-datastore==1.0.0
+  - google-cloud-dns==0.24.0
+  - google-cloud-error-reporting==0.24.2
+  - google-cloud-language==0.24.1
+  - google-cloud-logging==1.0.0
+  - google-cloud-monitoring==0.24.0
+  - google-cloud-pubsub==0.25.0
+  - google-cloud-resource-manager==0.24.0
+  - google-cloud-runtimeconfig==0.24.0
+  - google-cloud-spanner==0.24.2
+  - google-cloud-speech==0.24.0
+  - google-cloud-storage==1.1.1
+  - google-cloud-translate==0.24.0
+  - google-cloud-vision==0.24.0
+  - google-gax==0.15.13
+  - google-resumable-media==0.0.2
+  - googleapis-common-protos==1.5.2
+  - grpc-google-iam-v1==0.11.1
+  - grpcio==1.3.5
+  - httplib2==0.10.3
+  - idna==2.5
+  - ipython-genutils==0.2.0
+  - jupyter-client==5.0.1
+  - jupyter-console==5.1.0
+  - jupyter-core==4.3.0
+  - keras==2.0.4
+  - networkx==1.11
+  - oauth2client==3.0.0
+  - olefile==0.44
+  - pillow==4.1.1
+  - ply==3.8
+  - prompt-toolkit==1.0.14
+  - proto-google-cloud-datastore-v1==0.90.4
+  - proto-google-cloud-error-reporting-v1beta1==0.15.3
+  - proto-google-cloud-logging-v2==0.91.3
+  - proto-google-cloud-pubsub-v1==0.15.4
+  - proto-google-cloud-spanner-admin-database-v1==0.15.3
+  - proto-google-cloud-spanner-admin-instance-v1==0.15.3
+  - proto-google-cloud-spanner-v1==0.15.3
+  - proto-google-cloud-speech-v1beta1==0.15.3
+  - proto-google-cloud-vision-v1==0.90.3
+  - protobuf==3.3.0
+  - pyasn1==0.2.3
+  - pyasn1-modules==0.0.8
+  - pywavelets==0.5.2
+  - pyyaml==3.12
+  - requests==2.17.3
+  - rsa==3.4.2
+  - scikit-image==0.13.0
+  - tensorflow==1.1.0
+  - theano==0.9.0
+  - urllib3==1.21.1
+  - werkzeug==0.12.2
+prefix: /home/pratos/miniconda3/envs/py35
+
