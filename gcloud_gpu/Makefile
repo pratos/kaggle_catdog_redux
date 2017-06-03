@@ -39,7 +39,7 @@ cudnn_install: set_env_variables
 
 SHELL := /bin/bash
 
-miniconda_install: cudnn_install
+miniconda_install:
 	echo "============ Installing Python =================="
 	curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	bash Miniconda3-latest-Linux-x86_64.sh
